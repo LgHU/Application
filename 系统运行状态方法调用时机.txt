@@ -1,0 +1,53 @@
+
+libevent库，
+
+
+//app首次启动
+2017-06-28 16:57:49.554315 ApplicationEvent[475:218604] didFinishLaunchingWithOptions
+2017-06-28 16:57:49.563806 ApplicationEvent[475:218604] applicationDidBecomeActive
+
+//双击 "Home" 键
+2017-06-28 16:58:17.986410 ApplicationEvent[475:218604] applicationWillResignActive
+
+
+//未返回应用而是选择其他应用或者桌面
+2017-06-28 16:58:54.162812 ApplicationEvent[475:218604] applicationDidEnterBackground
+
+//此时应用在后台 -- 通过桌面点击图标进入
+2017-06-28 16:59:27.995578 ApplicationEvent[475:218604] applicationWillEnterForeground
+2017-06-28 16:59:28.443566 ApplicationEvent[475:218604] applicationDidBecomeActive
+
+// 此时应用在前台 -  双击 "Home" 键
+2017-06-28 16:59:48.975879 ApplicationEvent[475:218604] applicationWillResignActive
+
+//此时由于双击"Home"键,手机在待选状态 -- 选择回到应用
+2017-06-28 17:00:03.375796 ApplicationEvent[475:218604] applicationDidBecomeActive
+
+//滑出通知界面
+2017-06-28 17:00:29.955941 ApplicationEvent[475:218604] applicationWillResignActive
+
+//关闭通知界面
+2017-06-28 17:00:35.403574 ApplicationEvent[475:218604] applicationDidBecomeActive
+
+//划出苹果底部的操作界面
+2017-06-28 17:00:50.921612 ApplicationEvent[475:218604] applicationWillResignActive
+
+//关闭苹果底部的操作界面
+2017-06-28 17:00:53.958712 ApplicationEvent[475:218604] applicationDidBecomeActive
+
+//双击 "Home" 键
+2017-06-28 17:01:00.314202 ApplicationEvent[475:218604] applicationWillResignActive
+
+//此时由于双击"Home"键,手机在待选状态 -- 杀死app
+2017-06-28 17:01:04.681014 ApplicationEvent[475:218604] applicationDidEnterBackground
+2017-06-28 17:01:04.683537 ApplicationEvent[475:218604] applicationWillTerminate
+
+//app未运行  -- 点击通知打开应用
+2017-06-28 16:57:49.554315 ApplicationEvent[475:218604] didFinishLaunchingWithOptions
+2017-06-28 17:00:53.958712 ApplicationEvent[475:218604] applicationDidBecomeActive
+2017-06-28 17:00:53.958712 ApplicationEvent[475:218604] didReceiveLocalNotification
+
+//app在后台运行 -- 点击通知唤起应用
+2017-06-28 16:59:27.995578 ApplicationEvent[475:218604] applicationWillEnterForeground
+2017-06-28 17:00:53.958712 ApplicationEvent[475:218604] didReceiveLocalNotification
+2017-06-28 17:00:53.958712 ApplicationEvent[475:218604] applicationDidBecomeActive
